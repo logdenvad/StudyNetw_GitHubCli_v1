@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">GitHubClient_v1</string>
+    <string name="app_name">GithubOrgClient</string>
+    <string name="hint_org_name">Organization name</string>
+    <string name="btn_search">Search</string>
+    <string name="no_description">No description message</string>
+    <string name="label_forks">Forks: %d</string>
+    <string name="label_watchers">Watchers: %d</string>
+    <string name="label_open_issues">Open Issues: %d</string>
+    <string name="label_forked_from">Forked from:</string>
 </resources>

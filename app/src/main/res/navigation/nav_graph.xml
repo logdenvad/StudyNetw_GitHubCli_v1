@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/repoListFragment">
+
+    <fragment
+        android:id="@+id/repoListFragment"
+        android:name="my.studying.networking.githubclient_v1.ui.repolist.RepoListFragment"
+        android:label="Repositories"
+        tools:layout="@layout/fragment_repo_list">
+        <action
+            android:id="@+id/action_repoList_to_repoDetails"
+            app:destination="@id/repoDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/repoDetailsFragment"
+        android:name="my.studying.networking.githubclient_v1.ui.repodetails.RepoDetailsFragment"
+        android:label="Repository Details"
+        tools:layout="@layout/fragment_repo_details" />
+
+</navigation>
