@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "my.studying.networking.githubclient_v1"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "my.studying.networking.githubclient_v1"
