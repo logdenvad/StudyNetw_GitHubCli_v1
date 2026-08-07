@@ -9,7 +9,8 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
 
 public class MainActivity extends AppCompatActivity {
-
+    // only inflates Navigation controller
+    // forward the destinations from nav_graph
     private NavController navController;
 
     @Override

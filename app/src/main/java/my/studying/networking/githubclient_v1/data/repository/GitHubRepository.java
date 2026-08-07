@@ -9,14 +9,20 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+//serves as a connector with GitHub API service through RetrofitClient
+//provide data for viewmodels
+//has two methods: one for repo list and one for repo details
+
 public class GitHubRepository {
 
     private final GitHubApiService apiService;
 
+    //constructor receives a retrofit client and creates a service
     public GitHubRepository() {
         this.apiService = RetrofitClient.getInstance().create(GitHubApiService.class);
     }
 
+    // call a get method with the org name, with enqueue method that required to define a callback what to do with a received data
     public void listOrgRepos(String org, RepoCallback<List<Repository>> callback) {
         apiService.listOrgRepos(org).enqueue(new Callback<List<Repository>>() {
             @Override
